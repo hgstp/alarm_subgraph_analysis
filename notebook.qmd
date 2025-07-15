@@ -1,0 +1,70 @@
+---
+bibliography: references.bib 
+authors: # see https://quarto.org/docs/journals/authors.html for further options
+  - name: Firstname Lastname
+    orcid: 0000-0001-0002-0003
+    affiliation: "Your University"
+    country: CountryABC
+---
+
+# PC Algorithm for Causal Discovery
+
+| Resource | Information |
+|----|----|
+| Data DOI | [10.5281/zenodo.1234567](10.5281/zenodo.1234567) |
+| Git + DOI | [Git](https://github.com/username/project) [10.5281/zenodo.7654321](10.5281/zenodo.754321) |
+| Short Description | Short description of the main contributions and notebook structure |
+
+: {.striped}
+
+## Introduction
+
+Write an introduction to the analysis. Give references via @Mareis_Haug_Drton_2025.
+
+## Loading the Data
+
+Create an R environment and save it in the file `renv.lock` with `renv::snapshot()`. 
+Load the R environment with our standardized loading function.
+```{r, message=TRUE, warning=TRUE, eval=TRUE}
+source("../../load_environment.R")
+```
+
+Shortly describe the packages that were responsible for the R environment.
+```{r, message=FALSE, eval=FALSE}
+# Used packages, only for information.
+library(package1) # function of package1
+library(package2) # function of package2
+```
+
+Load the data. Prefereably from Zenodo:
+```{r, message = FALSE, warning=FALSE}
+# Load Data
+zenodo <- ZenodoManager$new(logger = NULL)
+record <- zenodo$getRecordByDOI("10.5281/zenodo.1234567")
+files <- record$listFiles(pretty = TRUE)
+alarm <- as.matrix(read.csv(files[1, 4]))
+```
+
+## Analysis 
+
+
+```{r, message=FALSE, warning=FALSE, eval=TRUE}
+source("../../close_environment.R")
+```
+
+## Citing this Notebook {.unnumbered}
+
+Please cite XYZ with the following bib item.
+
+``` bibtex
+@article{XYZ
+}
+```
+
+When using the ABC dataset, please give credit to the original author: Author
+
+## Additional Information {.unnumbered}
+
+**License Information:** Please follow the above DOI for license information of data and code.
+
+**Contact:** If you have suggestions, feel free to [create an issue](https://github.com/username/git-project/issues) or contact the authors (your@mail.address).
