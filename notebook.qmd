@@ -15,8 +15,8 @@ authors: # see https://quarto.org/docs/journals/authors.html for further options
 
 | Resource | Information |
 |----|----|
-| Data DOI | [10.5281/zenodo.14793281](https://doi.org/10.5281/zenodo.14793281) |
-| GitHub | [Git](https://github.com/hgstp/alarm_subgraph_analysis)  |
+| Data | [10.5281/zenodo.14793281](https://doi.org/10.5281/zenodo.14793281) |
+| NB  | [GitHub](https://github.com/hgstp/alarm_subgraph_analysis), [10.5281/zenodo.17238390](https://doi.org/10.5281/zenodo.17238390)  |
 | Short Description | The text describes the subgraph selection problem in large graphs $G$. The main objective is to find a smaller subgraph $S$ that is a meaningful and informative representation of the original graph $G$. |
 
 : {.striped}
