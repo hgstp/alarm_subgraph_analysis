@@ -12,11 +12,12 @@ authors: # see https://quarto.org/docs/journals/authors.html for further options
 
 # ALARM Subgraph Analysis
 
+
 | Resource | Information |
 |----|----|
 | Data DOI | [10.5281/zenodo.14793281](https://doi.org/10.5281/zenodo.14793281) |
-| Git + DOI | [Git](https://github.com/hgstp/alarm_subgraph_analysis) [10.5281/zenodo.7654321](10.5281/zenodo.754321) |
-| Short Description | Short description of the main contributions and notebook structure |
+| GitHub | [Git](https://github.com/hgstp/alarm_subgraph_analysis)  |
+| Short Description | The text describes the subgraph selection problem in large graphs $G$. The main objective is to find a smaller subgraph $S$ that is a meaningful and informative representation of the original graph $G$. |
 
 : {.striped}
 
@@ -28,7 +29,7 @@ In the context of graphical modelling the problem of subgraph selection correspo
 
 Furthermore, it is important to be able to evaluate the results of the structure learning algorithms (learned on the data) taking as a ground truth the selected subgraph.
 
-## Loading the Data
+### Loading the Data
 
 For our analysis we will need the following packages.
 ```{r}
@@ -298,7 +299,7 @@ sessionInfo()
 ```
 
 
-## Citing this Notebook {.unnumbered}
+### Citing this Notebook {.unnumbered}
 
 Please cite _ALARM Subgraph Analysis_ with the following bib item.
 
@@ -312,7 +313,7 @@ Please cite _ALARM Subgraph Analysis_ with the following bib item.
 
 When using the `ALARM` dataset, please give credit to the original author: @JSSv035i03.
 
-## Additional Information {.unnumbered}
+### Additional Information {.unnumbered}
 
 **License Information:** Please follow the above DOI for license information of data and code.
 
